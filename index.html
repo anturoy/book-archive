@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>নিখিল বঙ্গ গরু খোঁজা পাঠাগার</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+  <style>
+    /* Fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+    * {
+
+      font-family: "Poppins", sans-serif;
+      /* border: 1px solid red; */
+    }
+
+    body {
+      background-image: url(img/bg_main.gif);
+      background-size: 100%;
+      /* background-repeat: no-repeat; */
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      width: 70% !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container mx-auto">
+    <h1 class="text-center my-5">নিখিল বঙ্গ গরু খোঁজা পাঠাগার</h1>
+  </header>
+  <section class="container my-2">
+    <!-- Input Box -->
+    <div class="d-flex">
+      <input type="text" class="form-control me-2" placeholder="Book Name....." id="searchInput" />
+      <button class="btn btn-dark ms-2" id="search-btn">Search</button>
+    </div>
+  </section>
+  <section class="container">
+    <hr />
+  </section>
+  <section class="container mt-2">
+    <!-- Spinner -->
+    <div class="d-flex justify-content-center d-none" id="spiner">
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- error div  -->
+    <div id="error" class=" text-white  text-center"></div>
+
+    <div id="book-container" class="row row-cols-1 row-cols-md-3 g-3">
+      <!-- Reapeating -->
+
+      <!-- Book card's will be injected by javaScript here  -->
+
+      <!-- Repeating -->
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
